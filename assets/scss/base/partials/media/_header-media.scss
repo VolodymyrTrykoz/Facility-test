@@ -1,0 +1,33 @@
+
+
+@media screen and (max-width: 992px) { 
+
+	   .header__logo {
+	   	margin-left: 17px;
+	   }
+	   .header__nav {
+			margin-right: 14px;
+		   	& a {
+		   	  margin-left: 18px;
+		   	}
+	   }
+ }
+
+
+@media screen and (max-width: 576px) { 
+		.header {
+
+			&__menu {
+				display: block;
+				margin-right: 5%;
+			}
+
+			&__nav {
+				display: none;
+	   		}
+
+			& span {
+				font-size: 14px;
+			}
+		} 
+}

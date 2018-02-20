@@ -1,0 +1,47 @@
+
+  .header {
+
+  	text-transform: uppercase;
+  	color: $content-color;
+			& .wrapper {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 10px 0;
+			}
+
+			& span {
+				font-family: 'GothamPro';
+				font-size: 18px;
+				font-weight: 800;
+				letter-spacing: 0.9px; 
+			} 
+  			&__logo {
+				display: flex;
+				align-items: center;
+
+  				& img {
+  				width: 67px;
+  				margin-right: 27px;
+  				}
+  			}
+
+
+  			&__nav a {
+  				font-family:'GothamPro';
+  				font-size: 14px;
+  				text-decoration: none;
+  				margin-left: 18px;
+  				letter-spacing: 0.3px;
+				transition: .2s all linear;
+					&:hover {
+						color: #545ad8;
+					}
+
+  			}
+
+  			&__menu {
+  				display: none;
+  			}
+  }
+

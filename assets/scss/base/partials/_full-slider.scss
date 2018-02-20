@@ -1,0 +1,147 @@
+
+.slick-next {
+	right: 216px;
+	top: 287px;
+}
+
+.slick-prev {
+	left: 180px;
+    z-index: 50;
+    top: 287px;
+}
+
+
+.full-slider {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	
+		& h1 {
+			font-family: 'GothamProBol';
+		    font-size: 75px;
+		    letter-spacing: 2px;
+		    word-spacing: 2px;
+		    margin-bottom: 19px;
+		    margin-left: -10px;
+			
+		}
+
+		& p {
+			font-family: 'GothamPro';
+		    font-size: 14px;
+		    width: 55%;
+		    margin: 0 auto;
+		    letter-spacing: 0.2px;
+		    word-spacing: 1px;
+		    line-height: 1.45;
+			
+		}
+
+		&__inner-box {
+			width: 50%;
+			margin: 126px auto 140px;
+
+			& button {
+				font-family: 'GothamProBla';
+				padding: 15px 55px;
+				background: $content-color;
+				border: 1px solid #fff;
+				border-radius: 20px;
+				margin: 29px 8px 0 0;
+				transition: .2s all linear;
+
+					&:hover {
+						background-color: #c7d0d1;
+					}
+			}
+			
+		
+		}
+}
+
+
+
+
+.first-page {
+	background: url(../img/slider3.jpg);
+
+}
+
+.second-page {
+	background-image: url(../img/slider2.jpg);
+}
+
+.third-page {
+	background-image: url(../img/slider.jpg);
+}
+.first-page, .second-page, .third-page  {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.slick-prev:before, .slick-next:before {
+	font-family: $global-font-icon;
+	padding: 15px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    background: transparent;
+    transition: .2s all linear;
+}
+
+.slick-prev:before {
+	content: '\EA01';
+} 
+
+.slick-next:before {
+	content: '\EA02';
+
+} 
+
+.slick-next:hover:before {
+	background: #fff;
+	color:#000;
+}
+
+.slick-prev:hover:before {
+	background: #fff;
+	color:#000;
+}
+
+
+
+.slick-dots {
+		bottom: 10px;
+
+		& li {
+			margin: 0;
+
+			& button:before {
+				color: #fff;
+				opacity: 1;	
+				font-size: 40px;
+				line-height: 14px;
+			   
+
+			} 
+
+			&.slick-active button {
+				border: 1px solid #fff;
+				border-radius: 50%;
+
+					&:before {
+					color: $content-color;
+					border-radius: 50%;
+					line-height: 14px;
+					top: 0;
+		    		left: -3px;
+					}
+			}	
+		}
+}		
+.slick-dots li button {
+	width: 14px;
+	height: 14px;
+
+
+}

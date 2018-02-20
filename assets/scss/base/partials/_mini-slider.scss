@@ -1,0 +1,39 @@
+.mini-slider {
+
+
+	& .slick-prev, .slick-next {
+		    top: 92px;
+
+			&:before {
+				background: #fff;
+		        color: $content-color;
+		        border-color: $content-color;
+			} 
+
+		    &:hover:before {
+			   background: $content-color;
+			   color:#fff;
+			}
+	}
+
+	& .slick-prev {
+		    left: -72px;
+	}
+
+	& .slick-next {
+		    right: -72px;
+	}
+}
+
+.mini-slider__box{
+	padding: 0;
+	margin-left: 83px;
+}
+
+.box-item {
+	margin: 0 10px;
+		& img {
+		width: 108%;
+		height: auto;
+	}
+}

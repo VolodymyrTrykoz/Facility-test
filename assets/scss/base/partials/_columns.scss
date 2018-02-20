@@ -1,0 +1,21 @@
+.columns {
+	color: $content-color;
+	& h3 {
+		font-family: 'GothamProBol';
+		font-size: 19px;
+		margin-bottom: 25px;
+		margin-top: 0px;
+
+	}
+
+	& p {
+		font-family: 'GothamPro';
+	    font-size: 14px;
+	    letter-spacing: 0.3px;
+	    line-height: 1.75;
+	}
+
+	&-offset {
+		margin-top: 45px;
+	}
+}

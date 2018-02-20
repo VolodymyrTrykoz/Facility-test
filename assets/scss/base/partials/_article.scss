@@ -1,0 +1,53 @@
+.article{
+	font-family: 'GothamPro';
+	
+	& h2 {
+		margin: 26px 10px 70px 0;
+	}
+
+	& h3 {
+		
+	    font-size: 16px;
+	    color: $content-color;
+	    text-transform: uppercase;
+	    margin-left: 3px;
+    	word-spacing: 3px;
+    	margin-bottom: 35px;
+    		&.article-offset {
+				margin-top: 30px;
+			}
+	}
+  
+	p {
+		font-size: 17px;
+    	line-height: 1.65;
+    	margin: 0;
+    	width: 99%;
+    	
+		
+
+		& span.bold {
+			font-family: 'GothamProBol';
+		}
+
+		& span.italic {
+			font-family: 'GothamPro-Italic';
+		}
+
+		& a {
+			@extend %transition;
+			color: inherit;
+				&:hover {
+					color: #545ad8;
+				}
+		}
+
+		&:last-child {
+			margin-bottom: 106px;
+		}
+	}
+
+	&__text-box {
+		margin-left: -12px;
+	}	
+}
