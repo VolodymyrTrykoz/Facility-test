@@ -14,8 +14,13 @@
  }
 
 
-@media screen and (max-width: 576px) { 
+@media screen and (max-width: 756px) { 
 		.header {
+			
+			&--mobile {
+				
+				margin-top: 100vh;
+			} 
 
 			&__menu {
 				display: block;
@@ -31,3 +36,40 @@
 			}
 		} 
 }
+
+
+
+@media screen and (max-width: 338px) { 
+		.header {
+
+			&__logo {
+				position: relative;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			&__menu {
+				display: block;
+				margin-right: 5%;
+			}
+
+			&__nav {
+				display: none;
+	   		}
+
+			& span {
+				display: none;
+			}
+		} 
+}
+
+
+
+
+
+
+
+
+
+
+

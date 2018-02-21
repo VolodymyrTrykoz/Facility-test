@@ -27,5 +27,10 @@ $global-font-icon: 'social';
       content: $icon-next;
     }
   }
+  &.icon--top {
+    &:before {
+      content: $icon-top;
+    }
+  }
 
 }

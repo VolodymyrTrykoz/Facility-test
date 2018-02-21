@@ -51,8 +51,8 @@
 
 @media screen and (max-width: 768px) { 
 	.header__nav a {
-		font-size: 10px;
-		margin-left: 12px;
+		
+		margin-left: 0;
 	}
 
 	.slick-prev {
@@ -90,4 +90,29 @@
 	}	
 
 	
+}
+
+
+
+@media screen and (max-width: 338px) { 
+	.full-slider__inner-box {
+	    margin-top: 42px;
+	    margin-bottom: 126px;
+	}
+	.full-slider {
+
+		& p {
+			width: 81%;
+			font-size: 12px;
+			line-height: 1.7;
+		}	
+
+		& h1 {
+			font-size: 24px;
+		}	
+	}
+
+	.slick-dots {
+    	bottom: 10px;
+	}
 }

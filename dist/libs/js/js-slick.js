@@ -5,7 +5,8 @@
       	  		  infinite: true,
       	  		  fade: true,
       	  		  cssEase: 'linear',
-      	  		  speed: 500,
+      	  		  speed: 1000,
+                autoplay: true,
                   responsive: [
                       {
                         breakpoint: 576,
@@ -22,7 +23,8 @@
       	  {		  
       	  	infinite: true,
       	  	cssEase: 'linear',
-      	  	speed: 300,
+      	  	speed: 500,
+            autoplay: true,
       	  	slidesToShow: 3,
   			    slidesToScroll: 1,
             responsive: [

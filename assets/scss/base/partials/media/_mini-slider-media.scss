@@ -91,3 +91,18 @@
 }
 
 
+
+
+
+@media screen and (max-width: 338px) { 
+	.mini-slider .heading {
+		margin-top: 45px;
+	}
+	.mini-slider .slick-prev, .mini-slider .slick-next {
+    	top: 147%;
+	}
+
+	.mini-slider .slick-prev {
+    	left: 26%;
+	}
+}

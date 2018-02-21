@@ -41,10 +41,17 @@
 			width: 50%;
 			margin: 126px auto 140px;
 
-			& button {
+			
+			
+		
+		}
+}
+
+[type="submit"] {
 				font-family: 'GothamProBla';
 				padding: 15px 55px;
 				background: $content-color;
+				text-transform: uppercase;
 				border: 1px solid #fff;
 				border-radius: 20px;
 				margin: 29px 8px 0 0;
@@ -54,12 +61,6 @@
 						background-color: #c7d0d1;
 					}
 			}
-			
-		
-		}
-}
-
-
 
 
 .first-page {
@@ -134,14 +135,14 @@
 					border-radius: 50%;
 					line-height: 14px;
 					top: 0;
-		    		left: -3px;
+		    		left: -4px;
 					}
 			}	
 		}
 }		
 .slick-dots li button {
-	width: 14px;
-	height: 14px;
+	width: 12px;
+	height: 12px;
 
 
 }

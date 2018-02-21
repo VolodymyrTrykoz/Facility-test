@@ -14,9 +14,10 @@
 </head>
 <body> 
   <div class="main-page">
+
     <header class="header">
       <div class="wrapper">
-          <div class="header__logo">
+          <div class="header__logo" id="top">
             <a href="#"><img src="dist/img/logo.svg" alt="logo"></a>
             <span>Facility test</span>
           </div>
@@ -28,7 +29,7 @@
               <a href="#map">Map</a>
           </nav>
 
-          <button class="header__menu">Menu</button>
+          <div class="header__menu menu-slim"></div>
 
             <div class="mobile hide">
                 <div class="header__logo">
@@ -41,8 +42,19 @@
                     <a href="#artictle">Artictle</a>
                     <a href="#map">Map</a>
                 </nav>
-          <button class="close">Close</button>
-  </div>
+                <div class="close mobile-close">
+                    <a href="#" class="close-button">
+                      <div class="in">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                      </div>
+                      <div class="out">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                      </div>
+                    </a>
+                </div>
+            </div>
       </div>
     </header>
     <section class="full-slider" id="full-slider">
@@ -51,21 +63,21 @@
             <div class="full-slider__inner-box">
                 <h1>full slider</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consectetur cumque dignissimos, dolorem doloremque dolores eaque incidunt itaque libero maiores, minima minus necessitatibus nesciunt nostrum pariatur, quidem vero vitae.</p>
-                <button>POPUP</button>
+                <input type="submit" value="popup" id="form-js">
             </div>
         </div>
         <div class="second-page">
             <div class="full-slider__inner-box">
                 <h1>full slider</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consectetur cumque dignissimos, dolorem doloremque dolores eaque incidunt itaque libero maiores, minima minus necessitatibus nesciunt nostrum pariatur, quidem vero vitae.</p>
-                 <button>POPUP</button>
+                <input type="submit" value="popup" id="form-js">
             </div>
         </div>
         <div class="third-page">
             <div class="full-slider__inner-box">
                 <h1>full slider</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consectetur cumque dignissimos, dolorem doloremque dolores eaque incidunt itaque libero maiores, minima minus necessitatibus nesciunt nostrum pariatur, quidem vero vitae.</p>
-                 <button>POPUP</button>
+                <input type="submit" value="popup" id="form-js">
             </div>
         </div>
       </div>
@@ -142,9 +154,37 @@
     </section>
 
     <section class="map" id="map"></section>
+
+    <a href="#top"><span class="icon icon--top"></span></a>
   </div>
 
+   <section class="form form--hidden">
+    <div class="form-wrap">
+      <form action="#" id="registerForm" novalidate="true">
+        <div class="input">
+          <input type="name" name="name" id="name" placeholder="Your name" required>
+        </div>
+        <div class="input">
+          <input type="mail" name="mail" id="mail" placeholder="Your e-mail" required>
+        </div>
 
+        <input type="submit">
+        <div class="close">
+            <a href="#" class="close-button">
+              <div class="in">
+                <div class="close-button-block"></div>
+                <div class="close-button-block"></div>
+              </div>
+              <div class="out">
+                <div class="close-button-block"></div>
+                <div class="close-button-block"></div>
+              </div>
+            </a>
+        </div>
+      </form>
+                
+    </div>
+   </section>
 
 
 
@@ -156,6 +196,7 @@
 <script src="dist/libs/js/jquery-3.2.0.min.js"></script>
 <script src="dist/libs/js/slick.min.js"></script>
 <script src="dist/libs/js/js-slick.js"></script>
+<script src="dist/libs/js/scroll.js"></script>
 <script src="dist/libs/js/js.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvSms4wZnMGXQ1tBxOfkeJN4CjBBar-nY&callback=myMap"></script>
 

@@ -30,6 +30,7 @@
   			&__nav a {
   				font-family:'GothamPro';
   				font-size: 14px;
+  				color: $content-color;
   				text-decoration: none;
   				margin-left: 18px;
   				letter-spacing: 0.3px;
@@ -42,6 +43,10 @@
 
   			&__menu {
   				display: none;
+  			}
+
+  			&--mobile {
+  				margin-top: 0;
   			}
   }
 

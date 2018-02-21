@@ -24,3 +24,19 @@
 
 	}
 }
+
+
+
+
+@media screen and (max-width: 338px) { 
+	.columns h2 {
+		margin-bottom: 33px;
+	}
+	.columns .heading {
+	    margin-top: 144px;
+	}
+
+	.columns-offset {
+   	   margin-top: 0;
+	}
+}
