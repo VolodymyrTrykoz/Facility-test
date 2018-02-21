@@ -1,14 +1,5 @@
 window.addEventListener("load", myMap);
-    function myMap() {
-    var mapCanvas = document.getElementById("map");
-    var mapOptions = {
-    center: new google.maps.LatLng(50.43, 30.56),
-    zoom: 10
-    };
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-    };
-
-
+    
 var mobile = document.querySelector('.header__mobile');
 var close = document.querySelector('.close');
 var formClose = document.querySelector('form .close');
@@ -18,22 +9,22 @@ var formTable = document.querySelector('.form');
 var popUpButton = document.querySelectorAll('.form-js');
 var form = document.querySelector('#registerForm');
 
-console.log(popUpButton); 
 
 close.addEventListener('click', mobileCheck);
 menu.addEventListener('click', mobileCheck);
 
 
 
-function mobileCheck() {
-    mobile.classList.toggle('hide');
-    header.classList.toggle('header--miny');
-}
-
-
 formClose.addEventListener('click', function(){
 	formTable.classList.toggle('form--hidden');
 });
+
+
+
+form.addEventListener('submit', formValidate);
+
+
+
 
 for(var i = 0; i < popUpButton.length; i++ ) {
     popUpButton[i].addEventListener('click', function(){
@@ -48,7 +39,13 @@ for(var i = 0; i < popUpButton.length; i++ ) {
 
 
   
-    form.addEventListener('submit', function (e) {
+    function mobileCheck() {
+        mobile.classList.toggle('hide');
+        header.classList.toggle('header--miny');
+    }
+
+
+    function formValidate(e) {
        
         var isValid = true;
         var inputs = this.querySelectorAll('[required]');
@@ -71,4 +68,14 @@ for(var i = 0; i < popUpButton.length; i++ ) {
         }
 
 
-    });
+    }
+
+
+    function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+        center: new google.maps.LatLng(50.43, 30.56),
+        zoom: 10
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
