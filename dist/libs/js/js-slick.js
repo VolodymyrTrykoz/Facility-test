@@ -6,7 +6,6 @@
       	  		  fade: true,
       	  		  cssEase: 'linear',
       	  		  speed: 1000,
-                autoplay: true,
                   responsive: [
                       {
                         breakpoint: 576,

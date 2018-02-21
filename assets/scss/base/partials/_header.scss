@@ -1,5 +1,5 @@
 
-  .header {
+  .header { 
 
   	text-transform: uppercase;
   	color: $content-color;
@@ -10,7 +10,7 @@
 				padding: 10px 0;
 			}
 
-			& span {
+			& h1 {
 				font-family: 'GothamPro';
 				font-size: 18px;
 				font-weight: 800;
@@ -45,7 +45,7 @@
   				display: none;
   			}
 
-  			&--mobile {
+  			&--miny {
   				margin-top: 0;
   			}
   }

@@ -3009,7 +3009,7 @@ html {
 .invisible {
   visibility: hidden !important; }
 
-.heading:after, .mobile, .mobile .header__logo, .mobile .header__nav {
+.heading:after, .header__mobile, .header__mobile .header__logo, .header__mobile .header__nav {
   display: block;
   position: absolute;
   left: 50%;
@@ -3245,7 +3245,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     padding: 10px 0; }
-  .header span {
+  .header h1 {
     font-family: 'GothamPro';
     font-size: 18px;
     font-weight: 800;
@@ -3274,7 +3274,7 @@ html {
       color: #545ad8; }
   .header__menu {
     display: none; }
-  .header--mobile {
+  .header--miny {
     margin-top: 0; }
 
 .slick-next {
@@ -3290,7 +3290,7 @@ html {
   text-transform: uppercase;
   color: #fff;
   text-align: center; }
-  .full-slider h1 {
+  .full-slider span {
     font-family: 'GothamProBol';
     font-size: 75px;
     letter-spacing: 2px;
@@ -3309,18 +3309,21 @@ html {
     width: 50%;
     margin: 126px auto 140px; }
 
-[type="submit"] {
+[type="submit"], .popup {
+  display: inline-block;
   font-family: 'GothamProBla';
   padding: 15px 55px;
+  color: #fff;
   background: #646464;
   text-transform: uppercase;
+  text-decoration: none;
   border: 1px solid #fff;
   border-radius: 20px;
   margin: 29px 8px 0 0;
   -webkit-transition: .2s all linear;
   -o-transition: .2s all linear;
   transition: .2s all linear; }
-  [type="submit"]:hover {
+  [type="submit"]:hover, .popup:hover {
     background-color: #c7d0d1; }
 
 .first-page {
@@ -3378,7 +3381,7 @@ html {
         color: #646464;
         border-radius: 50%;
         line-height: 14px;
-        top: 0;
+        top: -1;
         left: -4px; }
 
 .slick-dots li button {
@@ -3531,14 +3534,14 @@ html {
       margin-left: 18px; } }
 
 @media screen and (max-width: 756px) {
-  .header--mobile {
+  .header--miny {
     margin-top: 100vh; }
   .header__menu {
     display: block;
     margin-right: 5%; }
   .header__nav {
     display: none; }
-  .header span {
+  .header h1 {
     font-size: 14px; } }
 
 @media screen and (max-width: 338px) {
@@ -3553,7 +3556,7 @@ html {
     margin-right: 5%; }
   .header__nav {
     display: none; }
-  .header span {
+  .header h1 {
     display: none; } }
 
 @media screen and (max-width: 992px) {
@@ -3561,7 +3564,7 @@ html {
     text-transform: uppercase;
     color: #fff;
     text-align: center; }
-    .full-slider h1 {
+    .full-slider span {
       font-size: 45px;
       letter-spacing: 1px;
       word-spacing: 1px;
@@ -3609,7 +3612,7 @@ html {
     width: 81%;
     font-size: 12px;
     line-height: 1.7; }
-  .full-slider h1 {
+  .full-slider span {
     font-size: 24px; }
   .slick-dots {
     bottom: 10px; } }
@@ -3700,40 +3703,40 @@ html {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
-  transition: 0.3s linear; }
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear; }
 
 .close {
   position: absolute;
   top: 9%;
   right: 8%; }
 
-.mobile {
-  -webkit-transition: 1s linear;
-  -o-transition: 1s linear;
-  transition: 1s linear;
+.header__mobile {
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
   top: 0;
   width: 100%;
   height: 100vh;
   background: #fff;
   z-index: 1; }
-  .mobile .header__logo {
+  .header__mobile .header__logo {
     margin: 0;
     top: 15%; }
-    .mobile .header__logo img {
+    .header__mobile .header__logo img {
       margin: 0; }
-  .mobile .header__nav {
+  .header__mobile .header__nav {
     top: 35%;
     text-align: center; }
-    .mobile .header__nav a {
+    .header__mobile .header__nav a {
       display: block;
       margin: 15px 0;
       text-transform: uppercase;
       color: #646464; }
-      .mobile .header__nav a:hover {
+      .header__mobile .header__nav a:hover {
         color: #545ad8; }
-  .mobile .header__menu {
+  .header__mobile .header__menu {
     position: absolute;
     top: 10%;
     right: 5%; }

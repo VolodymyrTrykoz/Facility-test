@@ -17,8 +17,7 @@
 @media screen and (max-width: 756px) { 
 		.header {
 			
-			&--mobile {
-				
+			&--miny {
 				margin-top: 100vh;
 			} 
 
@@ -31,7 +30,7 @@
 				display: none;
 	   		}
 
-			& span {
+			& h1 {
 				font-size: 14px;
 			}
 		} 
@@ -57,7 +56,7 @@
 				display: none;
 	   		}
 
-			& span {
+			& h1 {
 				display: none;
 			}
 		} 

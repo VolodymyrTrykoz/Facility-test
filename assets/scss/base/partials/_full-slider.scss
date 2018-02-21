@@ -1,5 +1,5 @@
 
-.slick-next {
+.slick-next { 
 	right: 216px;
 	top: 287px;
 }
@@ -16,7 +16,7 @@
 	color: #fff;
 	text-align: center;
 	
-		& h1 {
+		& span {
 			font-family: 'GothamProBol';
 		    font-size: 75px;
 		    letter-spacing: 2px;
@@ -47,11 +47,14 @@
 		}
 }
 
-[type="submit"] {
+[type="submit"], .popup {
+				display: inline-block;
 				font-family: 'GothamProBla';
 				padding: 15px 55px;
+				color: #fff;
 				background: $content-color;
 				text-transform: uppercase;
+				text-decoration: none;
 				border: 1px solid #fff;
 				border-radius: 20px;
 				margin: 29px 8px 0 0;
@@ -134,7 +137,7 @@
 					color: $content-color;
 					border-radius: 50%;
 					line-height: 14px;
-					top: 0;
+					top: -1;
 		    		left: -4px;
 					}
 			}	

@@ -3,7 +3,7 @@
 .hide {	
   left: 0;
   transform: translateY( -100%);
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 
 .close {
@@ -14,8 +14,8 @@
 
 
 
-.mobile {
-	transition: 1s linear;	
+.header__mobile {
+	transition: 0.3s linear;	
 	@extend %ham;
 	top: 0;
 	width: 100%;
