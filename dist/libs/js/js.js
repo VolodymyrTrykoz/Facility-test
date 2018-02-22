@@ -51,6 +51,10 @@ for(var i = 0; i < popUpButton.length; i++ ) {
         var inputs = this.querySelectorAll('[required]');
 
         for (var i = 0; i < inputs.length; i++) {
+            inputs[i].onfocus = function(){
+                this.classList.remove('error')
+            }  
+
             if (inputs[i].value == '' ) {
                 inputs[i].classList.add('error')
                 isValid = false;
